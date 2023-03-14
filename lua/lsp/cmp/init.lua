@@ -36,7 +36,7 @@ keymap("c", keys.select_prev_item, "<C-p>", {
 cmp.setup({
   snippet = {
     expand = function(args)
-      require('luasnip').lsp_expand(args.body)
+      vim.fn["vsnip#anonymous"](args.body)
     end
   },
   window = {
@@ -50,7 +50,7 @@ cmp.setup({
       group_index = 1,
     },
     {
-      name = "luasnip",
+      name = "vsnip",
       group_index = 2,
     },
     {

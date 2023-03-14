@@ -38,7 +38,7 @@ keymap("x", oKeys.x_p, '"_dP')
 
 -- split windows
 -- cancle the default function of "s"
-keymap("n", "s", "")
+keymap("n", "w", "")
 keymap("n", keys.split_vertically, ":vsp<CR>")
 keymap("n", keys.split_horizontally, ":sp<CR>")
 keymap("n", keys.close, "<C-w>c")

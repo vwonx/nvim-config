@@ -61,8 +61,8 @@ if packer then
       use({
         "nvim-treesitter/nvim-treesitter",
         run = function()
-            local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-            ts_update()
+          local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+          ts_update()
         end,
         config = function()
           require("plugins.nvim-treesitter")
@@ -83,11 +83,11 @@ if packer then
           require("diffview").setup()
         end
       })
-      -- toggleterm
+      -- leap
       use({
-        "akinsho/toggleterm.nvim",
+        "ggandor/leap.nvim",
         config = function()
-          require("plugins.toggleterm");
+          require("leap").add_default_mappings()
         end
       })
 
@@ -106,9 +106,14 @@ if packer then
       use("hrsh7th/cmp-path")
       use("hrsh7th/cmp-cmdline")
       -- snippet plugin
-      use("L3MON4D3/LuaSnip")
-      use("saadparwaiz1/cmp_luasnip")
+      use("hrsh7th/cmp-vsnip")
+      use("hrsh7th/vim-vsnip")
 
+      -----------Format--------
+      use({
+        "jose-elias-alvarez/null-ls.nvim",
+        require = "nvim-lua/plenary.nvim",
+      })
     end,
     config = {
       display = {

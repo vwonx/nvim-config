@@ -27,7 +27,7 @@ end
 function _G.setColorScheme(name)
   local status_ok, _ = pcall(vim.cmd, "colorscheme " .. name)
   if not status_ok then
-    vim.notify("colorscheme:·" .. colorscheme .. " not found！")
+    -- vim.notify("colorscheme:·" .. colorscheme .. " not found！")
     return
   end
 end

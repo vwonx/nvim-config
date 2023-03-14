@@ -4,7 +4,7 @@ if lualine then
   lualine.setup({
     options = {
       theme = "tokyonight",
-      globalstatus = false,
+      globalstatus = true,
     },
     extensions = { "nvim-tree" },
     sections = {

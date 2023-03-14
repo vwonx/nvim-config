@@ -4,7 +4,7 @@ local keys = require("utils.global-keys-mapping").treesitter
 if treesitter then
   treesitter.setup({
     -- A list of parser names, or "all" (the five listed parsers should always be installed)
-    ensure_installed = { "c", "lua", "vim", "help", "query" },
+    ensure_installed = { "c", "cpp", "cmake", "lua", "vim", "help", "query" },
 
     highlight = {
       enable = true,

@@ -23,23 +23,23 @@ M.basic = {
 
   -- windows operator
   -- spilt window
-  split_vertically = "sv",
-  split_horizontally = "sh",
+  split_vertically = "wv",
+  split_horizontally = "wh",
   -- close current
-  close = "sc",
+  close = "wc",
   -- close others
-  close_others = "so",
+  close_others = "wo",
   -- jump between windows
   jump_left = { "<A-h>", "<leader>h" },
   jump_right = { "<A-l>", "<leader>l" },
   jump_up = { "<A-k>", "<leader>k" },
   jump_down = { "<A-j>", "<leader>j" },
   -- control windows size
-  width_decrease = "s,",
-  width_increase = "s.",
-  height_decrease = "sj",
-  height_increase = "sk",
-  size_equal = "s=",
+  width_decrease = "w,",
+  width_increase = "w.",
+  height_decrease = "wj",
+  height_increase = "wk",
+  size_equal = "w=",
 
   -- terminal
   terminal_to_normal = "<esc>",
@@ -159,15 +159,6 @@ M.cmp = {
   snip_jump_prev = "<C-h>",
   snip_next_choice = "<C-j>",
   snip_prev_choice = "<C-k>",
-}
-
-M.toggleterm = {
-  toggle_float_window = "<leader>ta",
-  toggle_float_window_command = nil,
-  toggle_side_window = "<leader>tb",
-  toggle_side_window_command = nil,
-  toggle_bottom_window = "<leader>tc",
-  toggle_bottom_window_command = nil,
 }
 
 return M
